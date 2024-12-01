@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "title": "Cozy Beachfront Apartment",
+    "description": "Enjoy the beautiful sea views in this modern beachfront apartment. Perfect for couples and small families.",
+    "pricePerNight": 120,
+    "location": {
+      "city": "Santa Monica",
+      "country": "USA",
+      "lat": 34.0194,
+      "lng": -118.4912
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1504898775022-6312e70bad48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Wi-Fi", "Air Conditioning", "Kitchen", "Washer"],
+    "ratings": 4.7,
+    "reviewsCount": 45,
+    "maxGuests": 4,
+    "rooms": {
+      "totalRooms": 3,
+      "beds": 2,
+      "bathrooms": 1
+    }
+  },
+  {
+    "id": 2,
+    "title": "Mountain Cabin Retreat",
+    "description": "Escape to this serene cabin surrounded by breathtaking mountain views. Ideal for adventurers and nature lovers.",
+    "pricePerNight": 85,
+    "location": {
+      "city": "Aspen",
+      "country": "USA",
+      "lat": 39.1911,
+      "lng": -106.8175
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1507086181591-4486e6b5c9e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1502212187807-9c9b5f8fa36f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1472220625704-91e1462799b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Fireplace", "Free Parking", "Hot Tub", "Wi-Fi"],
+    "ratings": 4.9,
+    "reviewsCount": 78,
+    "maxGuests": 6,
+    "rooms": {
+      "totalRooms": 6,
+      "beds": 4,
+      "bathrooms": 2
+    }
+  },
+  {
+    "id": 3,
+    "title": "Luxury City Loft",
+    "description": "Stay in the heart of the city in this luxurious and fully-equipped loft. Walk to popular attractions and nightlife.",
+    "pricePerNight": 200,
+    "location": {
+      "city": "New York",
+      "country": "USA",
+      "lat": 40.7128,
+      "lng": -74.006
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e002aaf1f272?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1596702962261-6cf8cd130cfb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1527034101140-5b801f03c5a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Wi-Fi", "Elevator", "Gym", "24/7 Concierge"],
+    "ratings": 4.8,
+    "reviewsCount": 120,
+    "maxGuests": 2,
+    "rooms": {
+      "totalRooms": 2,
+      "beds": 1,
+      "bathrooms": 1
+    }
+  },
+  {
+    "id": 4,
+    "title": "Charming Countryside Cottage",
+    "description": "Relax in this charming countryside cottage surrounded by lush greenery and tranquility. A perfect getaway spot.",
+    "pricePerNight": 65,
+    "location": {
+      "city": "Cotswolds",
+      "country": "UK",
+      "lat": 51.8667,
+      "lng": -2.0333
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1560194262-45bf5ca7a5e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1544636338-e9bff738b25d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Garden", "Free Parking", "Pet-Friendly", "Wi-Fi"],
+    "ratings": 4.6,
+    "reviewsCount": 35,
+    "maxGuests": 5,
+    "rooms": {
+      "totalRooms": 3,
+      "beds": 2,
+      "bathrooms": 1
+    }
+  },
+  {
+    "id": 5,
+    "title": "Modern Lake House",
+    "description": "This modern lake house is a tranquil escape with stunning water views and activities like kayaking and fishing.",
+    "pricePerNight": 150,
+    "location": {
+      "city": "Lake Tahoe",
+      "country": "USA",
+      "lat": 39.0968,
+      "lng": -120.0324
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1556911220-e15b30f38b24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1533636323232-94983c2740a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Kayak", "Free Parking", "Wi-Fi", "Fireplace"],
+    "ratings": 4.9,
+    "reviewsCount": 65,
+    "maxGuests": 6,
+    "rooms": {
+      "totalRooms": 4,
+      "beds": 3,
+      "bathrooms": 2
+    }
+  },
+  {
+    "id": 6,
+    "title": "Urban Penthouse with Skyline Views",
+    "description": "Experience luxury living in this urban penthouse offering panoramic city skyline views and world-class amenities.",
+    "pricePerNight": 250,
+    "location": {
+      "city": "Chicago",
+      "country": "USA",
+      "lat": 41.8781,
+      "lng": -87.6298
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1559692123-a24952034d77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1533777324565-a040eb52facd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1534239842592-d179d7a4107b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Wi-Fi", "Gym", "Private Pool", "24/7 Security"],
+    "ratings": 5.0,
+    "reviewsCount": 98,
+    "maxGuests": 4,
+    "rooms": {
+      "totalRooms": 3,
+      "beds": 2,
+      "bathrooms": 2
+    }
+  },
+  {
+    "id": 7,
+    "title": "Rustic Farmhouse Getaway",
+    "description": "A peaceful farmhouse retreat surrounded by open fields and fresh air, perfect for family gatherings.",
+    "pricePerNight": 90,
+    "location": {
+      "city": "Nashville",
+      "country": "USA",
+      "lat": 36.1627,
+      "lng": -86.7816
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1527251691669-d52d8b927f76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1571008887538-21c13a2e5da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1560784259-d9a1ab5bc00b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Garden", "Fireplace", "Free Parking", "Wi-Fi"],
+    "ratings": 4.8,
+    "reviewsCount": 72,
+    "maxGuests": 8,
+    "rooms": {
+      "totalRooms": 5,
+      "beds": 4,
+      "bathrooms": 2
+    }
+  },
+  {
+    "id": 8,
+    "title": "Tropical Villa with Private Pool",
+    "description": "Unwind in this tropical paradise featuring a private pool and spacious outdoor areas, ideal for relaxation.",
+    "pricePerNight": 300,
+    "location": {
+      "city": "Honolulu",
+      "country": "USA",
+      "lat": 21.3069,
+      "lng": -157.8583
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1541848950727-07f7b16a31d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1595776933391-312d45fbf167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1573479010475-4d0c1a4a04d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Private Pool", "BBQ Area", "Wi-Fi", "Beach Access"],
+    "ratings": 4.9,
+    "reviewsCount": 85,
+    "maxGuests": 10,
+    "rooms": {
+      "totalRooms": 6,
+      "beds": 5,
+      "bathrooms": 3
+    }
+  },
+  {
+    "id": 9,
+    "title": "Historic Downtown Apartment",
+    "description": "Stay in a beautifully restored historic apartment located in the heart of downtown with easy access to attractions.",
+    "pricePerNight": 130,
+    "location": {
+      "city": "Savannah",
+      "country": "USA",
+      "lat": 32.0809,
+      "lng": -81.0912
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1598136491587-9e573f5979e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1512915929556-45ba2f81b2e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1573164574394-cb89e39749d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Wi-Fi", "Pet-Friendly", "Air Conditioning", "Washer"],
+    "ratings": 4.7,
+    "reviewsCount": 60,
+    "maxGuests": 3,
+    "rooms": {
+      "totalRooms": 2,
+      "beds": 1,
+      "bathrooms": 1
+    }
+  },
+  {
+    "id": 10,
+    "title": "Beachside Bungalow",
+    "description": "Charming bungalow just steps away from the beach, offering a relaxing seaside vacation experience.",
+    "pricePerNight": 110,
+    "location": {
+      "city": "San Diego",
+      "country": "USA",
+      "lat": 32.7157,
+      "lng": -117.1611
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1560807707-8cc77767d783?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1533107862482-0e6971b3d992?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "amenities": ["Wi-Fi", "Free Parking", "BBQ Area", "Beach Access"],
+    "ratings": 4.8,
+    "reviewsCount": 50,
+    "maxGuests": 5,
+    "rooms": {
+      "totalRooms": 3,
+      "beds": 2,
+      "bathrooms": 2
+    }
+  }
+]
