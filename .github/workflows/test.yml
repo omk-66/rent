@@ -1,22 +1,33 @@
-name: run tests cases on push
+name: Run test cases on push
 
-on :
-    push:
-        branches:
-            - main
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-        build:
-            runs-on: ubuntu-latest
-            steps:
-                - uses: actions/checkout@v2
-                - name: Set up nextjs
-                  uses: actions/setup-node@v2
-                  with:
-                    node-version: '16'
-                - name: Install dependencies
-                  run: |
-                    npm install
-                - name: build app
-                  run: |
-                    npm run build
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Cache node modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build app
+        run: npm run build
