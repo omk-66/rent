@@ -1,14 +1,25 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Heart } from "lucide-react";
+import { useRef, useState } from "react";
+import { Heart } from "lucide-react"; // Import Heart icon from Lucide or your preferred library
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
     CarouselPrevious,
-} from "@/components/ui/carousel";
+    CarouselNext,
+} from "@/components/ui/carousel"; // Ensure these are imported correctly from your carousel library
+import { Card, CardContent } from "@/components/ui/card"; // Adjust based on your UI library
 
-export function CardCarousel({ imges }: { imges: string[] }) {
+export function CardCarousel({ images }: { images: string[] }) {
+    const likeRef = useRef(false)
+    // State for individual likes
+    const [likes, setLikes] = useState<boolean[]>(Array(images.length).fill(false));
+
+    const toggleLike = (index: number) => {
+        setLikes((prev) =>
+            prev.map((like, i) => (i === index ? !like : like))
+        );
+    };
+
     return (
         <div className="relative w-full max-w-xs">
             <Carousel
@@ -16,7 +27,7 @@ export function CardCarousel({ imges }: { imges: string[] }) {
                 opts={{ align: "start", loop: true, dragFree: true }}
             >
                 <CarouselContent>
-                    {imges.map((img, index) => (
+                    {images.map((img, index) => (
                         <CarouselItem key={index}>
                             <div className="p-0">
                                 <Card className="border-none">
@@ -29,8 +40,21 @@ export function CardCarousel({ imges }: { imges: string[] }) {
                                                 className="h-48 w-full object-cover rounded-t-lg"
                                             />
                                             {/* Favorite Icon */}
-                                            <button className="absolute top-3 right-3 bg-white rounded-full p-2 shadow">
-                                                <Heart className="h-5 w-5 text-gray-600" />
+                                            <button
+                                            ref = {likeRef}
+                                                className="absolute top-3 right-3 bg-white rounded-full p-2 shadow"
+                                                aria-label={
+                                                    likes[index]
+                                                        ? "Unlike this image"
+                                                        : "Like this image"
+                                                }
+                                                onClick={() => toggleLike(index)}
+                                            >
+                                                {likes[index] ? (
+                                                    <Heart color="#f41515" className="h-5 w-5" />
+                                                ) : (
+                                                    <Heart className="h-5 w-5 text-gray-600" />
+                                                )}
                                             </button>
                                         </div>
                                     </CardContent>

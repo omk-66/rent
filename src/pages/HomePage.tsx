@@ -5,3 +5,4 @@ export default function HomePage() {
         <div><ListingList /></div>
     )
 }
+

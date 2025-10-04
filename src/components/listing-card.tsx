@@ -32,9 +32,11 @@ interface ListingCardProps {
 }
 export default function ListingCard({ data }: ListingCardProps) {
     return (
-        <motion.div whileHover={{scale: 1.02, transition:{duration:0.3}}}>
-            <Card className="w-80 border shadow-md">
-            <CardCarousel imges={data.images} />
+        <motion.div whileHover={{scale: 1.02, transition:{duration:0.3}}}
+        whileTap={{scale: 0.98, transition:{duration:0.3}}}
+        >
+            <Card className="w-70 border shadow-lg cursor-pointer">
+            <CardCarousel images={data.images} />
             <CardHeader className="p-4">
                 <CardTitle className="text-2xl font-semibold">{data.location.city}</CardTitle>
                 <p className="text-sm text-gray-600">{data.location.city}, India</p>
