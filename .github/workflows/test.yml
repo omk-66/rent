@@ -6,9 +6,10 @@ on:
       - main
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
-
+    outputs:
+      cache-hit: ${{ steps.cache-deps.outputs.cache-hit }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -19,6 +20,7 @@ jobs:
           node-version: '18'
 
       - name: Cache node modules
+        id: cache-deps
         uses: actions/cache@v4
         with:
           path: ~/.npm
@@ -28,6 +30,61 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+  lint:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Lint code
+        run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run tests
+        run: npm test
+
+  security:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check for vulnerabilities
+        run: npm audit --audit-level=high
+
+      - name: Check for secret leaks
+        uses: trufflesecurity/trufflehog-action@v2
+        with:
+          scan_directory: .
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [setup, lint, test, security]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
 
       - name: Build app
         run: npm run build
