@@ -27,10 +27,7 @@ export interface Accommodation {
 export default function ListingList() {
     return (
         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
-                {/* {Array.from({ length: 12 }).map((_, index) => (
-                    <ListingCard key={index} />
-                ))} */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 grid-flow-row-dense">
                 {db.map((item: Accommodation) => (
                     <ListingCard data={item} key={item.id}/>
                 ))}
